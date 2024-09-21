@@ -1,0 +1,58 @@
+/* "Modal component for Website", v. 0.5 - 20.09.2024 | MIT License | Made by Anatolii Ovcharuk - https://github.com/Anatolii-Ovcharuk */
+/* Description: This is CSS Style file for Modal_v.0.5.jsx (React file). For Websites with support modal on page. */
+/* ATTENTION! Use this file only with component Modal_v.0.5.jsx (React file). */
+/* Add this is CSS Style file in project. */
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.65);
+        z-index: 2;
+        transition: opacity linear 250ms;
+    }
+
+    .overlay__button {
+        position: absolute;
+        margin: 10px;
+        top: 10px;
+        right: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.0);
+        border: 2px ridge #eeeeee;
+        border-radius: 50%;
+        cursor: pointer;
+        fill: #eeeeee;
+        transition: fill linear 250ms, border-color linear 250ms;
+    }
+
+    .overlay__button__icon {
+        fill: inherit;
+        width: 32px;
+        height: 32px;
+        z-index: -1;
+    }
+
+    .overlay__button:hover { 
+        fill: #e12424; /* #aa0000, #bb2828, #e12424 */
+        border-color: #e12424; /* #aa0000, #bb2828, #e12424 */
+    }
+
+    .modal, .large-image {
+        max-width: calc(100vw - 48px);
+        max-height: calc(100vh - 24px);
+    }
+
+    .large-image {
+        display: block;
+        margin: 20px auto;
+    }

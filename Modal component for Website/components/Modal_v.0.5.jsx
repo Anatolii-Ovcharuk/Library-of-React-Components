@@ -5,7 +5,7 @@
     /* INSTALLATION */
 /* Add in HTML portal:  <div id="modal-root"></div> */
 /* Add in application next string:  const [select, setSelect] = useState(null); */
-/* Add in CSS Style:
+/* Add in CSS Style or include in project CSS/SCSS file's:
     .overlay {
         position: fixed;
         top: 0;
@@ -36,6 +36,7 @@
         cursor: pointer;
         fill: #eeeeee;
         transition: fill linear 250ms, border-color linear 250ms;
+    }
 
     .overlay__button__icon {
         fill: inherit;

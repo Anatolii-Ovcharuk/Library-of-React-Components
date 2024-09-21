@@ -3,7 +3,7 @@
 /* Version with automatic playing. */
 
     /* INSTALLATION */
-/* Add in CSS Style or include in project css file:
+/* Add in CSS Style or include in project CSS/SCSS file's:
     .block__music__button {
         fill: inherit;
         color: inherit;
