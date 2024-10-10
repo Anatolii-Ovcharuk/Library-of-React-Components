@@ -4,8 +4,14 @@
 /* Add this is SCSS (SASS) Style file in project. */
 
 .block__music {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         background-color: inherit;
         border: 0px;
         fill: inherit;
@@ -14,15 +20,16 @@
         margin: 6px;
         cursor: pointer;
         transition: color 250s linear;
+        width: 36px;
+        height: 36px;
     }
 
     &__icon {
         fill: inherit;
         color: inherit;
         transition: fill linear 250ms;
-        width: 30px;
-        height: 30px;
-        margin: 10px;
+        width: 24px;
+        height: 24px;
     }
 }
 

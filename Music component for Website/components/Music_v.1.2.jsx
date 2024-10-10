@@ -26,7 +26,7 @@ JSX string for render or return: <Music />
 */
 
 import React, { useState, useEffect, useContext, useRef } from 'react';
-const link_audio = "./audio/mp3/magic_duduk_64.mp3"; // Укажите путь к аудиофайлу. Set src to audio here.
+const link_audio = "./audio/mp3/test.mp3"; // Укажите путь к аудиофайлу. Set src to audio here.
 
 const Music = () => {
     const [play, setPlay] = useState(false);
@@ -85,6 +85,7 @@ const Music = () => {
         if (play) {
             audioElement.play().catch(error => {
                 console.error("Failed to play audio:", error);
+                toggleAudio();
             });
         } else {
             audioElement.pause();

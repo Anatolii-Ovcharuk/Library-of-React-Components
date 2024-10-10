@@ -1,0 +1,54 @@
+/* "Language module", v. 0.5 - 10.10.2024 | MIT License | Made by Anatolii Ovcharuk - https://github.com/Anatolii-Ovcharuk */
+/* Description: This is SCSS (SASS) Style file for Language_v.0.5.jsx (React file). For Websites with support multilanguage on page. */
+/* ATTENTION! Use this file only with component Language_v.0.5.jsx (React file). */
+/* Add this is SCSS (SASS) Style file in project. */
+
+.language {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6px;
+    // gap: 6px;
+    font-size: 14px;
+
+    background-color: inherit;
+    color: inherit;
+    fill: inherit;
+
+    & option {
+        background-color: inherit;
+        color: #272727;
+
+        &:hover {
+            color: inherit;
+        }
+    };
+
+    &__icon {
+        width: 21px;
+        height: 21px;
+        color: inherit;
+        fill: inherit;
+        margin: 4px;
+    }
+
+    &__inf {
+        color: inherit;
+        fill: inherit;
+        margin: 4px;
+    }
+
+    &__opt {
+        background-color: inherit;
+        border: 0px;
+        color: inherit;
+        fill: inherit;
+        margin: 4px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+};
+
