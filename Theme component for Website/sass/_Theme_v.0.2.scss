@@ -1,0 +1,29 @@
+/* "Theme component", v. 0.2 - 10.10.2024 | MIT License | Made by Anatolii Ovcharuk - https://github.com/Anatolii-Ovcharuk */
+/* Description: This is SCSS (SASS) Style file for Theme_v.0.2.jsx (React file). For Websites with support music on page. */
+/* ATTENTION! Use this file only with component Theme_v.0.2.jsx (React file). */
+/* Add this is SCSS (SASS) Style file in project. */
+
+
+.block__theme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__button {
+        fill: inherit;
+        color: inherit;
+        background-color: inherit;
+        border: 0px;
+        transition: fill 250ms linear, color 250ms linear;
+        cursor: pointer;
+
+        & .theme__icon {
+            fill: inherit;
+            color: inherit;
+            transition: fill 250ms linear, color 250ms linear;
+            width: 22px;
+            height: 22px;
+        }
+    }
+
+};
