@@ -84,6 +84,7 @@ const setChangeTheme = (index) => {
   document.body.style.fill = theme.fill;
 
   document.body.setAttribute('data-theme', theme.name);
+  console.log(`Set ${theme.name} theme.`);
 
   const header = document.querySelector(".header");
   if (header) {
@@ -91,11 +92,6 @@ const setChangeTheme = (index) => {
     header.style.color = theme.color;
     header.style.borderColor = theme.borderColor;
     header.style.fill = theme.fill;
-  }
-
-  const logo = document.querySelector('.logo_gfwc');
-  if (logo) {
-    logo.style.fill = theme.backgroundColor;
   }
 
 };
