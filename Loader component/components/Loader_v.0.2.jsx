@@ -1,5 +1,5 @@
 /* "Loader module", v. 0.2 - 27.10.2024 | MIT License | Made by Anatolii Ovcharuk - https://github.com/Anatolii-Ovcharuk */
-/* Description: This is JS Component for React. */
+/* Description: This is JSX Component for React. */
 
 import React, { Component, useState, useEffect, useContext, useReducer, useMemo, useRef, lazy, Suspense } from 'react';
 
