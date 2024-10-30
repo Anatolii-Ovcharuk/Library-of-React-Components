@@ -6,8 +6,8 @@
 /* Add next string in application on render or return: <DiagramPie dataset={data} title={"- Total stats in data"} id={"totalData"} /> */
 
 // import * as d3 from 'd3';
-import "https://d3js.org/d3.v7.min.js";
-import "./d3.v7.min.js";
+// import "https://d3js.org/d3.v7.min.js";
+import * as d3 from "./d3.v7.min.js";
 
 import React, { Component, useState, useEffect, useContext, useReducer, useMemo, useRef, lazy, Suspense } from 'react';
 
