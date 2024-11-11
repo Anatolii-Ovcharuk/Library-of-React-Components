@@ -1,0 +1,50 @@
+/* Remake by Anatolii Ovcharuk - https: //github.com/Anatolii-Ovcharuk */
+/* Description: This is CSS for JSX Component (React). */
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100..900&display=swap');
+
+@font-face {
+    font-family: 'Heading Now';
+    src: url('https://fonts.vdhazel.com/headingnow/Heading-Now-Variable-Regular-trial.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.animated-text {
+    box-sizing: border-box;
+}
+
+.animated-text {
+    font-family: "Heading Now", sans-serif;
+    font-optical-sizing: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* min-height: 100vh; */
+    background-color: inherit;
+    color: inherit;
+}
+
+.animated-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7vw; /* 10vw */
+    line-height: 10vw;
+}
+
+.letter {
+    display: inline-block;
+    --wght: 100;
+    --wdth: 85;
+    --opacity: 0.25;
+    --letter-spacing: 0;
+    font-variation-settings: "wght" var(--wght), "wdth" var(--wdth);
+    opacity: var(--opacity);
+    letter-spacing: var(--letter-spacing);
+    transition:
+        font-variation-settings 1s ease-in-out,
+        opacity 1s ease-in-out,
+        letter-spacing 2s ease-in-out;
+}
