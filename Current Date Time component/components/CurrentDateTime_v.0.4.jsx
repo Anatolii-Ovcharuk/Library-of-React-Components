@@ -11,7 +11,7 @@ Add string in application in section of return or render:
 <CurrentDateTime /> - With default settings;
 */
 /* 
-Call function for recive value: 
+Call function for receive value: 
 FormDateTime(true) - With set options;
 */
 

@@ -2,7 +2,7 @@
 
     /* INSTALLATION */
 /* This .jsx component for react use with file "d3.v7.min.js" or install in project - "npm install d3"  */
-/* Add next string in application: import DiagramPie from './Diagram_pie_v.0.2'; */
+/* Add next string in application: import DiagramPie from './Diagram_pie_v.0.4'; */
 /* Add next string in application on render or return: <DiagramPie dataset={data} title={"- Total stats in data"} id={"totalData"} /> */
 
 // import * as d3 from 'd3';
