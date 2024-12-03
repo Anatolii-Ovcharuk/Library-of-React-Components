@@ -4,7 +4,7 @@
 import React, { Component, useState, useEffect, useContext, useReducer, useMemo, useRef, lazy, Suspense } from 'react';
 
     /* INSTALLATION */
-/* Add string in application: import Loader from './Loader_v.0.2' */
+/* Add string in application: import Loader from './Loader_v.0.4' */
 /* Add string in application in section of return or render: 
 <Loader time={500} symbol='.' total={3} size={90} reverse={false} /> - With set options;
 <Loader /> - With default settings;
