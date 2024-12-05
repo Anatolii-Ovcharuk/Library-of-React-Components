@@ -17,3 +17,4 @@ const Sprite: React.FC<SpriteProps> = ({ id }) => (
 );
 
 export default Sprite;
+
