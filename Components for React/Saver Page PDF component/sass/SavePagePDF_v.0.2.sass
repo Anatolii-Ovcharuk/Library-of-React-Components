@@ -1,0 +1,37 @@
+/* "Save Page PDF", v. 0.2 - 22.11.2024 | MIT License | Made by Anatolii Ovcharuk - https://github.com/Anatolii-Ovcharuk */
+/* Description: This is SCSS (SASS) Style file for SaverPagePDF.jsx (React file). For Websites with support music on page. */
+/* ATTENTION! Use this file only with component SaverPagePDF.jsx (React file). */
+/* Add this is SCSS (SASS) Style file in project. */
+
+
+.block__savePagePDF
+    display: flex
+    justify-content: center
+    align-items: center
+
+    &__button
+        display: flex
+        justify-content: center
+        align-items: center
+        background-color: inherit
+        border: 0px
+        fill: inherit
+        color: inherit
+        transition: fill linear 250ms, color linear 250ms
+        margin: 4px // 6 px
+        cursor: pointer
+        transition: color 250s linear
+        width: 36px
+        height: 36px
+        opacity: 1
+
+        &:disabled
+            opacity: 0.5
+            cursor: not-allowed
+
+        & .savePagePDF__icon
+            fill: inherit
+            color: inherit
+            transition: fill 250ms linear, color 250ms linear
+            width: 30px
+            height: 30px
