@@ -1,4 +1,4 @@
-/* "Diagram (pie) module", v. 0.5 - 11.11.2024 | MIT License | Made by Anatolii Ovcharuk - https://github.com/Anatolii-Ovcharuk */
+/* "Diagram (pie) module", v. 0.7 - 12.12.2024 | MIT License | Made by Anatolii Ovcharuk - https://github.com/Anatolii-Ovcharuk */
 
     /* INSTALLATION */
 /* This .jsx component for react use with file "d3.v7.min.js" or install in project - "npm install d3"  */
