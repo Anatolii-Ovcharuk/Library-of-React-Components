@@ -72,17 +72,20 @@ const ConsoleModule = ({arrayGetInformation}) => {
     
         try {
             if (arrayGetInformation && arrayGetInformation.length > 0) {
+                console.log("-------- SHOW OTHER DATA --------");
                 arrayGetInformation.map(element => console.log(element));
+                console.log("---------------------------------");
             } else {
                 console.warn("Data for show in console is not set. Use in component 'ConsoleModule' key for set - 'arrayGetInformation'.");
             };
         } catch (error) {
-            console.error("Error for show data in console.")
+            console.error(`Error for show data in console. Error: ${error.message || error || "Unknown"}.`)
         };
     };
 
     function checkBrowser() {
         let result = "undefined";
+        console.log("█████████████████████████████████");
         console.log("Initializating to detection browser...")
             /* Проверка типа браузера */
     const isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
