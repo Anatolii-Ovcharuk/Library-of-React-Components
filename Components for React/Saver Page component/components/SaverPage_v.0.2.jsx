@@ -1,7 +1,7 @@
 /* "Saver Page", v. 0.2 - 22.02.2025 React Edition | MIT License | Made by Anatolii Ovcharuk - https://github.com/Anatolii-Ovcharuk */
 
   /* INSTALLATION */
-/* Add in component where is use: import SavePagePNG from './extension/SaverPagePNG_v.0.2.jsx';
+/* Add in component where is use: import SavePagePNG from './extension/SaverPage_v.0.2.jsx';
 ADD IN RENDER: <SavePagePNG />
 */
 
