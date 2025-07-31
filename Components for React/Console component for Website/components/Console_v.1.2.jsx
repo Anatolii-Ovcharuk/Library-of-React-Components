@@ -1,4 +1,4 @@
-/* "Console module", v. 1.2 - 12.12.2024 | MIT License | Made by Anatolii Ovcharuk - https://github.com/Anatolii-Ovcharuk */
+/* "Console module", v. 1.2 - 31.07.2025 | MIT License | Made by Anatolii Ovcharuk - https://github.com/Anatolii-Ovcharuk */
 /* Description: This is JSX Component for React. */
 
 import { element } from 'prop-types';
@@ -11,7 +11,7 @@ import React, { Component, useState, useEffect, useContext, useReducer, useMemo,
     /* OPTIONS DEFAULT */
 const INCLUDE_DATE_IN_NAME = true; /* Include date in name file for save ? true/false */
 
-const ConsoleModule = ({arrayGetInformation}) => {
+const ConsoleModule = ({arrayGetInformation, slide = true}) => {
     const [dataConsole, setDataConsole] = useState('');
     const terminalRef = useRef(null);
     const originalLog = useRef(console.log).current; // Store the original console.log
@@ -21,8 +21,25 @@ const ConsoleModule = ({arrayGetInformation}) => {
     const log = (...args) => {
         const logData = args.join(' ');
         setDataConsole(prev => `${prev}\n${logData}`);
-        terminalRef.current.scrollTop = terminalRef.current.scrollHeight;
+        // terminalRef.current.scrollTop = terminalRef.current.scrollHeight;
+        if (terminalRef.current) {
+            terminalRef.current.scrollTop = terminalRef.current.scrollHeight;
+        };
+        // Безопасный доступ к DOM-элементу через ref
+        // if (terminalRef.current) {
+        //     setTimeout(() => {
+        //         terminalRef.current.scrollTop = terminalRef.current.scrollHeight;
+        //     }, 0);
+        // };
         originalLog(...args); // Call the original console.log
+    };
+
+    if (slide) {
+        useEffect(() => {
+            if (terminalRef.current) {
+                terminalRef.current.scrollTop = terminalRef.current.scrollHeight;
+            }
+        }, [dataConsole]);
     };
 
     const clearConsole = (event) => {
